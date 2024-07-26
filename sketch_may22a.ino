@@ -195,8 +195,8 @@ void fillFrame() {
 
 #define NumberOf(arg) ((unsigned int) (sizeof (arg) / sizeof (arg [0])))
 
-#define _1_OPTIMIZE B00010000 //  https://github.com/GiorgosXou/NeuralNetworks#define-macro-properties
-#define _2_OPTIMIZE B00100000 // MULTIPLE_BIASES_PER_LAYER
+#define _1_OPTIMIZE 0B00010000 //  https://github.com/GiorgosXou/NeuralNetworks#define-macro-properties
+#define _2_OPTIMIZE 0B00100000 // MULTIPLE_BIASES_PER_LAYER
                  // Comment   this line and ...
 //#define ELU                 // Uncomment this line to use ELU Activation Function
 //rien pour sigmoid
