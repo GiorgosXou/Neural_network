@@ -196,6 +196,7 @@ void fillFrame() {
 #define NumberOf(arg) ((unsigned int) (sizeof (arg) / sizeof (arg [0])))
 
 #define _1_OPTIMIZE B00010000 //  https://github.com/GiorgosXou/NeuralNetworks#define-macro-properties
+#define _2_OPTIMIZE B00100000 // MULTIPLE_BIASES_PER_LAYER
                  // Comment   this line and ...
 //#define ELU                 // Uncomment this line to use ELU Activation Function
 //rien pour sigmoid
@@ -207,8 +208,6 @@ void fillFrame() {
 const unsigned int layers[] = {754,15,4,1};
 
 float *output; // 3rd layer's output(s)
-
-#define _2_OPTIMIZE B00100000 // MULTIPLE_BIASES_PER_LAYER
 
 float bias[] = {
   -0.00807049, -0.047849786, -0.012392022, -0.01859664, -0.0006355427, -0.010089128, 0.008959201, 0.019561052, -0.014779374, -0.024431689, 0.011560615, -0.02335617, 0.011269973, -0.004026851, -0.0054472405,
